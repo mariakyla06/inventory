@@ -73,7 +73,7 @@ if ($result->num_rows > 0) {
     $pdf->Cell(55, 10, 'Product Name', 1, 0, 'C'); // Center alignment
     $pdf->Cell(40, 10, 'Product Group', 1, 0, 'C'); // Center alignment
     $pdf->Cell(35, 10, 'Total Qty Sold', 1, 1, 'C'); // Center alignment
-    $pdf->Cell(35, 10, 'Total Qty Sold', 1, 1, 'C'); // Center alignment
+    $pdf->Cell(35, 10, 'Date', 1, 1, 'C'); // Center alignment
 
     // Use '1' as the last parameter to move to the next line
 
@@ -84,6 +84,7 @@ if ($result->num_rows > 0) {
         $pdf->Cell(55, 10, $row["productName"], 1, 0, 'C'); // Center alignment
         $pdf->Cell(40, 10, $row["productGroup"], 1, 0, 'C'); // Center alignment
         $pdf->Cell(35, 10, $row["qty"], 1, 1, 'C'); // Center alignment
+        $pdf->Cell(35, 10, $row["created_at"], 1, 1, 'C'); // Center alignment
         // Use '1' as the last parameter to move to the next line
     }
 } else {
