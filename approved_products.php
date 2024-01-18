@@ -45,7 +45,7 @@
                 <td><?= $order['office']; ?></td>
                 <td><?= ucwords($order['ordered_by_name']) ?></td>
                 <td><?= $order['remarks']; ?></td>
-                <td><?= ucfirst(strtolower('STATUS'));?></td>
+                <td><?= ucfirst(strtolower$order['status']);?></td>
 
 
                 <?php

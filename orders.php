@@ -158,7 +158,8 @@
                 <td><?= $order['office']; ?></td>
                 <td><?= ucwords($order['ordered_by_name']) ?></td>
                 <td><?= $order['remarks']; ?></td>
-                <td><?= ucfirst(strtolower('STATUS'));?></td>
+                <td><?= ucwords($order['status']); ?></td>
+
 
                 <?php
                     if ( $adminLogin ){
