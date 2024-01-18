@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <a href="generateBar.php">
-                        <i class='bx bx-barcode-scanner' ></i>
+                        <i class='bx bx-barcode' ></i>
                         <span class="links_name">Generate Barcode</span>
                     </a>
                 </li>
