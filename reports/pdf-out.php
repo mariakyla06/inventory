@@ -50,12 +50,12 @@ $startDate = '2023-12-01';
 $endDate = '2023-12-31';
 
 // Assuming $startDate and $endDate are in the format 'YYYY-MM-DD'
-$sql = "SELECT C.barcodeId, C.productName, C.productGroup, SUM(B.quantity) AS qty
+$sql = "SELECT C.barcodeId, C.productName, C.productGroup, SUM(B.quantity) AS qty, C.created_at
         FROM product_transactions AS A
         RIGHT JOIN orders AS B ON A.order_id = B.id
         LEFT JOIN product AS C ON B.product_id = C.id
         WHERE (A.created_at BETWEEN '$startDate' AND '$endDate')
-        GROUP BY C.barcodeId, C.productName, C.productGroup";
+        GROUP BY C.barcodeId, C.productName, C.productGroup, C.created_at";
 
 $result = $conn->query($sql);
 
@@ -73,6 +73,8 @@ if ($result->num_rows > 0) {
     $pdf->Cell(55, 10, 'Product Name', 1, 0, 'C'); // Center alignment
     $pdf->Cell(40, 10, 'Product Group', 1, 0, 'C'); // Center alignment
     $pdf->Cell(35, 10, 'Total Qty Sold', 1, 1, 'C'); // Center alignment
+    $pdf->Cell(35, 10, 'Total Qty Sold', 1, 1, 'C'); // Center alignment
+
     // Use '1' as the last parameter to move to the next line
 
     // Output data of each row
