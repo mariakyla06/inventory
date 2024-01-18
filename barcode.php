@@ -19,7 +19,7 @@
     </nav>
     <div class="container">
       <div class="form-container left">
-          <h2>Add Product </h2>
+          <h2>Add Supply </h2>
           <form action="addProduct.php" method="post"  onsubmit="return confirmSubmit()">
             <label for="barcodeId">Barcode:</label>
             <input type="text" name="barcodeId" id="barcodeId" required>

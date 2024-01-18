@@ -46,13 +46,15 @@ $currentMonth = date('m');
 $currentYear = date('Y');
 
 // Query to retrieve monthly data
+$startDate = '2023-12-01';
+$endDate = '2023-12-31';
+
+// Assuming $startDate and $endDate are in the format 'YYYY-MM-DD'
 $sql = "SELECT C.barcodeId, C.productName, C.productGroup, SUM(B.quantity) AS qty
-        FROM product_transactions as A
-        RIGHT JOIN orders as B
-        ON A.order_id = B.id
-        LEFT JOIN product as C
-        ON B.product_id = C.id
-        WHERE MONTH(A.created_at) = $currentMonth AND YEAR(A.created_at) = $currentYear
+        FROM product_transactions AS A
+        RIGHT JOIN orders AS B ON A.order_id = B.id
+        LEFT JOIN product AS C ON B.product_id = C.id
+        WHERE (A.created_at BETWEEN '$startDate' AND '$endDate')
         GROUP BY C.barcodeId, C.productName, C.productGroup";
 
 $result = $conn->query($sql);

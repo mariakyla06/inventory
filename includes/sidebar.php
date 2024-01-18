@@ -24,7 +24,7 @@
                 </li>
                 <li>
                     <a href="approved_products.php">
-                        <i class='bx bx-store'></i>
+                        <i class='bx bx-user-check'></i>
                         <span class="links_name">Approved Product</span>
                     </a>
                 </li>

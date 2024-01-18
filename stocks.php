@@ -18,7 +18,7 @@
     </nav>
     <div class="container">
       <div class="form-container left">
-        <h2>Update Product </h2>
+        <h2>Update Stocks </h2>
         <form action="updateProduct.php" method="post" onsubmit="return confirmSubmit()">
 
             <label for="barcodeId">Barcode:</label>
