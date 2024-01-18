@@ -45,7 +45,8 @@
                 <td><?= $order['office']; ?></td>
                 <td><?= ucwords($order['ordered_by_name']) ?></td>
                 <td><?= $order['remarks']; ?></td>
-                <td><?= $order['status']; ?></td>
+                <td><?= ucwords($order['status']); ?></td>
+
                 <?php
                     if ( $adminLogin ){
                 ?>
