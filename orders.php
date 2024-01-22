@@ -137,7 +137,7 @@
     <div class="product-container" style="max-height: 500px; overflow: auto;">
         <table border="1">
             <tr>
-                <th>Product</th>
+                <th>Supply</th>
                 <th>Ordered Quantity</th>
                 <th>Office</th>
                 <th>Ordered By</th>

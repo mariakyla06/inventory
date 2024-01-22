@@ -13,7 +13,7 @@
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Add Product</span>
+        <span class="dashboard">Add Supply</span>
       </div>
       
     </nav>
@@ -50,7 +50,7 @@
 
 
       <div class="product-container">
-        <h2>Product Information</h2>
+        <h2>Supply Information</h2>
 <?php
 
 // Create connection
@@ -78,8 +78,8 @@ if ($result->num_rows > 0) {
         <table>
             <tr>
                 <th>Product ID</th>
-                <th>Product Name</th>
-                <th>Product Group</th>
+                <th>Supply Name</th>
+                <th>Category</th>
                 <th>Quantity</th>
                 <th>Date Created</th>
             </tr>

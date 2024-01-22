@@ -20,7 +20,7 @@
     <div class="report-content">
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Import Product
+          <div class="title">Import Supply
             <div class="sales-details">
               <div class=></div>
               <div class="button">
@@ -32,7 +32,7 @@
         </div>
         <br>
         <div class="recent-sales box">
-          <div class="title">Release Product
+          <div class="title">Release Supply
             <div class="sales-details">
               <div class=></div>
               <div class="button">

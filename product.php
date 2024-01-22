@@ -59,8 +59,8 @@
             <table>
                 <tr>
                     <th>Product ID</th>
-                    <th>Product Name</th>
-                    <th>Product Group</th>
+                    <th>Supply Name</th>
+                    <th>Category</th>
                     <th>Quantity</th>
                     <th>Created Date</th>
                     <th>Updated Date</th>

@@ -70,8 +70,8 @@ if ($result->num_rows > 0) {
     // Output table header
     $pdf->SetFont('Arial', 'B',  12);
     $pdf->Cell(55, 10, 'Barcode ID', 1, 0, 'C'); // Center alignment
-    $pdf->Cell(55, 10, 'Product Name', 1, 0, 'C'); // Center alignment
-    $pdf->Cell(40, 10, 'Product Group', 1, 0, 'C'); // Center alignment
+    $pdf->Cell(55, 10, 'Supply Name', 1, 0, 'C'); // Center alignment
+    $pdf->Cell(40, 10, 'Category', 1, 0, 'C'); // Center alignment
     $pdf->Cell(35, 10, 'Total Qty Sold', 1, 1, 'C'); // Center alignment
     // Use '1' as the last parameter to move to the next line
 
