@@ -98,18 +98,7 @@ if ($result->num_rows > 0) {
     <?php endif; ?>
     
         <br>
-        <div class="bar-boxes">
-          <div class="recent-bar box">
-              <div class="bar-details">
-                <div class=></div>
-                <div class="button">
-                  <a href="#">Add</a>
-                  <a href="#">Remove</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    
     </div> 
      
   </div>

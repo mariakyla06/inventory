@@ -67,24 +67,7 @@ if ($result->num_rows > 0) {
     }
 }
 ?><?php if (!empty($updateProduct)): ?>
-        <table>
-            <tr>
-                <th>Product ID</th>
-                <th>Product Name</th>
-                <th>Product Group</th>
-                <th>Quantity</th>
-                <th>Date Created</th>
-            </tr>
-            <?php foreach ($updateProduct as $update): ?>
-                <tr>
-                    <td><?php echo $update['barcodeId']; ?></td>
-                    <td><?php echo $update['productName']; ?></td>
-                    <td><?php echo $update['productGroup']; ?></td>
-                    <td><?php echo $update['qty']; ?></td>
-                    <td><?php echo $update['created_at']; ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </table>
+      
     <?php else: ?>
         <p>No product list available.</p>
     <?php endif; ?>
