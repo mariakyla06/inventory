@@ -133,7 +133,7 @@
         </div>
     <?php }?>
 
-    <div class="product-container">
+    <div class="product-container" style="max-height: 500px; overflow: auto;">
         <table border="1">
             <tr>
                 <th>Product</th>
