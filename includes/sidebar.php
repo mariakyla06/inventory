@@ -4,7 +4,7 @@
 
             <li>
                 <a href="orders.php">
-                    <i class='bx bx-list-ul'></i>
+                    <i class='bx bx-cart'></i>
                     <span class="links_name">Orders</span>
                 </a>
             </li>
@@ -42,14 +42,14 @@
                 </li>
                 <li>
                     <a href="report.php">
-                        <i class='bx bx-list-ul'></i>
+                        <i class='bx bx-report'></i>
                         <span class="links_name">Report</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="clients.php">
-                        <i class='bx bx-list-ul'></i>
+                        <i class='bx bx-male-female'></i>
                         <span class="links_name">Clients</span>
                     </a>
                 </li>
