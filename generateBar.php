@@ -12,7 +12,7 @@
     <nav>
         <div class="sidebar-button">
             <i class='bx bx-menu sidebarBtn'></i>
-            <span class="dashboard">Generate Product</span>
+            <span class="dashboard">Generate Barcode</span>
         </div>
     </nav>
     <div class="container">

@@ -13,19 +13,19 @@
                 <li>
                     <a href="product.php">
                         <i class='bx bx-box'></i>
-                        <span class="links_name">Product</span>
+                        <span class="links_name">Supply</span>
                     </a>
                 </li>
                 <li>
                     <a href="barcode.php">
                         <i class='bx bx-store'></i>
-                        <span class="links_name">Add Product</span>
+                        <span class="links_name">Add Supply</span>
                     </a>
                 </li>
                 <li>
                     <a href="approved_products.php">
                         <i class='bx bx-user-check'></i>
-                        <span class="links_name">Approved Product</span>
+                        <span class="links_name">Approved Supply</span>
                     </a>
                 </li>
                 <li>

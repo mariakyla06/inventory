@@ -14,7 +14,7 @@
     <nav>
         <div class="sidebar-button">
             <i class='bx bx-menu sidebarBtn'></i>
-            <span class="dashboard">Product History</span>
+            <span class="dashboard">Supply History</span>
         </div>
     </nav>
 
