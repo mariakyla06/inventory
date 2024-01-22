@@ -37,7 +37,11 @@
         // Search functionality
         if (isset($_POST['search'])) {
             $search = $_POST['search'];
-            $sql = "SELECT barcodeId, productName, productGroup, qty, created_at, updated_at FROM product WHERE barcodeId LIKE '%$search%' OR productName LIKE '%$search%' ORDER BY created_at DESC";
+            $sql = "SELECT barcodeId, productName, productGroup, qty, created_at, updated_at FROM product 
+                    WHERE barcodeId LIKE '%$search%' 
+                    OR productName LIKE '%$search%' 
+                    OR productGroup LIKE '%$search%'
+                    ORDER BY created_at DESC";
         } else {
             $sql = "SELECT barcodeId, productName, productGroup, qty, created_at, updated_at FROM product ORDER BY created_at DESC";
         }
