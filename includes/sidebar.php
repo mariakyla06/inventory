@@ -42,14 +42,14 @@
                 </li>
                 <li>
                     <a href="report.php">
-                        <i class='bx bx-report'></i>
+                    <i class='bx bxs-report' ></i>
                         <span class="links_name">Report</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="clients.php">
-                        <i class='bx bx-male-female'></i>
+                    <i class='bx bx-male-female' ></i>
                         <span class="links_name">Clients</span>
                     </a>
                 </li>
