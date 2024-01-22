@@ -49,7 +49,7 @@
 
                 <li>
                     <a href="clients.php">
-                    <i class='bx bx-male-female' ></i>
+                    <i class='bx bxs-group'></i>
                         <span class="links_name">Clients</span>
                     </a>
                 </li>
