@@ -66,7 +66,7 @@ if ($result->num_rows > 0) {
         $updateProduct[] = $row;
     }
 }
-?><?php if (!empty($updateProduct)): ?>
+?>
      
 
   <script>
