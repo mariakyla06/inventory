@@ -475,8 +475,12 @@ button:hover {
     background-color: #555;
 }
 /* Setting.html  */
+.home-contents {
+  display: flex;
+  justify-content: space-between;
+}
 .form-container {
-  max-width: 400px;
+  width: 48%;
   margin: 0 auto;
 }
 

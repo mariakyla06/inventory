@@ -67,13 +67,7 @@ if ($result->num_rows > 0) {
     }
 }
 ?><?php if (!empty($updateProduct)): ?>
-      
-    <?php else: ?>
-        <p>No product list available.</p>
-    <?php endif; ?>
-    </div> 
      
-  </div>
 
   <script>
    let sidebar = document.querySelector(".sidebar");
