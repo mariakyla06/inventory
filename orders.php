@@ -132,6 +132,13 @@
 
         </div>
     <?php }?>
+    <section class="home-section">
+    <nav>
+        <div class="sidebar-button">
+            <i class='bx bx-menu sidebarBtn'></i>
+            <span class="dashboard">Add Clients</span>
+        </div>
+    </nav>
 
     <div class="product-container" style="max-height: 500px; overflow: auto;">
         <table border="1">
