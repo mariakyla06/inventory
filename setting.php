@@ -18,7 +18,7 @@
       
     </nav>
 
-    <div class="home-contents">
+    <div class="forms-container">
       <div class="form-container">
         <h2>Register</h2>
         <form action="register.php" method="post">
