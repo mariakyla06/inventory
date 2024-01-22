@@ -19,7 +19,6 @@
     </nav>
 
     <div class="forms-container">
-      <div class="form-container">
         <h2>Register</h2>
         <form action="register.php" method="post">
           <label for="username">Username</label>
@@ -38,7 +37,7 @@
         </form>
     </div><br>
 
-    <div class="form-container">
+    <div class="formS-container">
         <h2>Change Password</h2>
         <form action="change_password.php" method="post">
             
