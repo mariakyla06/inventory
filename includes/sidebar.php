@@ -10,12 +10,7 @@
             </li>
 
             <?php if( !isset($_SESSION['user_data']->client_login) ) {?>   
-                <li>
-                <a href="orders.php">
-                    <i class='bx bx-cart'></i>
-                    <span class="links_name">Orders</span>
-                </a>
-            </li>
+                
                 <li>
                     <a href="product.php">
                         <i class='bx bx-box'></i>
