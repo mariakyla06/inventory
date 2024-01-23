@@ -1,12 +1,7 @@
 <div class="sidebar">
         <div class="details"></div>
         <ul class="nav-links">
-            <li>
-                    <a href="product.php">
-                        <i class='bx bx-box'></i>
-                        <span class="links_name">Supply</span>
-                    </a>
-            </li>
+ <?php if( !isset($_SESSION['user_data']->client_login) ) {?>   
             <li>
                 <a href="orders.php">
                     <i class='bx bx-cart'></i>
@@ -14,8 +9,13 @@
                 </a>
             </li>
 
-            <?php if( !isset($_SESSION['user_data']->client_login) ) {?>   
-              
+           
+                <li>
+                    <a href="product.php">
+                        <i class='bx bx-box'></i>
+                        <span class="links_name">Supply</span>
+                    </a>
+                </li>
                 <li>
                     <a href="barcode.php">
                         <i class='bx bx-store'></i>
