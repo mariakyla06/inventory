@@ -134,7 +134,80 @@
     <?php }?>
     
 
-    <div class="product-container" style="max-height: 500px; overflow: auto;">
+        
+
+        
+        <?php if($adminLogin){ ?>
+            <table border="1">
+            <tr>
+                <th>Supply</th>
+                <th>Ordered Quantity</th>
+                <th>Office</th>
+                <th>Ordered By</th>
+                <th>Remarks</th>
+                <th>Status</th>
+                <?php
+                    if ( $adminLogin ){
+                ?>
+                <th>Action</th>
+                <?php
+                    }
+                ?>
+
+            </tr>
+            <?php foreach ($orders as $order): ?>
+            <tr>
+                <td><?= ucwords($order['product_name']) ?></td>
+                <td><?= $order['quantity']; ?></td>
+                <td><?= $order['office']; ?></td>
+                <td><?= ucwords($order['ordered_by_name']) ?></td>
+                <td><?= $order['remarks']; ?></td>
+                <td><?= ucfirst(strtolower($order['status']));?></td>
+
+
+                <?php
+                    if ( $adminLogin ){
+                ?>
+                     <td>
+                        <?php 
+                            if( $order['status'] == 'PENDING' ){
+                        ?>
+                            <?php 
+                                if( (int) $order['quantity'] > (int) $order['existing_qty']  ){
+                            ?>
+                               <p>OUT OF STOCK</p>
+
+                            <?php }else{ ?>
+                                <form action="queries/update_order.php" method="post">
+                                    <input type="hidden" name="order_id" value="<?= $order['id']; ?>">
+                                    <input type="hidden" name="product_id" value="<?= $order['product_id']; ?>">
+                                    <input type="hidden" name="ordered_quantity" value="<?= $order['quantity']; ?>">
+                                    <input type="hidden" name="status" value="APPROVED">
+                                    <input style="background-color: green;" type="submit" value="APRROVE">
+                                </form>
+ 
+                                <form action="queries/update_order.php" method="post">
+                                    <input type="hidden" name="order_id" value="<?= $order['id']; ?>">
+                                    <input type="hidden" name="status" value="REJECTED">
+                                    <input style="background-color: red;" type="submit" value="REJECT">
+                                </form>
+                            <?php   } ?>
+ 
+ 
+                        <?php
+                            }
+                        ?>
+                    </td>
+
+                    
+                <?php
+                    }
+                ?>  
+            </tr>
+            <?php endforeach; ?>
+        </table>
+    <?php }else{ ?>
+        <div class="product-table">
         <table border="1">
             <tr>
                 <th>Supply</th>
@@ -165,34 +238,46 @@
                 <?php
                     if ( $adminLogin ){
                 ?>
-                    <td>
+                     <td>
                         <?php 
                             if( $order['status'] == 'PENDING' ){
                         ?>
-                            <form action="queries/update_order.php" method="post">
-                                <input type="hidden" name="order_id" value="<?= $order['id']; ?>">
-                                <input type="hidden" name="product_id" value="<?= $order['product_id']; ?>">
-                                <input type="hidden" name="ordered_quantity" value="<?= $order['quantity']; ?>">
-                                <input type="hidden" name="status" value="APPROVED">
-                                <input style="background-color: green;" type="submit" value="APRROVE">
-                            </form>
-                            <form action="queries/update_order.php" method="post">
-                                <input type="hidden" name="order_id" value="<?= $order['id']; ?>">
-                                <input type="hidden" name="status" value="REJECTED">
-                                <input style="background-color: red;" type="submit" value="REJECT">
-                            </form>
+                            <?php 
+                                if( (int) $order['quantity'] > (int) $order['existing_qty']  ){
+                            ?>
+                               <p>OUT OF STOCK</p>
+
+                            <?php }else{ ?>
+                                <form action="queries/update_order.php" method="post">
+                                    <input type="hidden" name="order_id" value="<?= $order['id']; ?>">
+                                    <input type="hidden" name="product_id" value="<?= $order['product_id']; ?>">
+                                    <input type="hidden" name="ordered_quantity" value="<?= $order['quantity']; ?>">
+                                    <input type="hidden" name="status" value="APPROVED">
+                                    <input style="background-color: green;" type="submit" value="APRROVE">
+                                </form>
+ 
+                                <form action="queries/update_order.php" method="post">
+                                    <input type="hidden" name="order_id" value="<?= $order['id']; ?>">
+                                    <input type="hidden" name="status" value="REJECTED">
+                                    <input style="background-color: red;" type="submit" value="REJECT">
+                                </form>
+                            <?php   } ?>
+ 
+ 
                         <?php
                             }
                         ?>
                     </td>
+
+                    
                 <?php
                     }
                 ?>  
             </tr>
             <?php endforeach; ?>
         </table>
-    </div>
-
+        </div>
+<?php }?>
 </div>
 </section>
 

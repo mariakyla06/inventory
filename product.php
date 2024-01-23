@@ -29,6 +29,7 @@
 
         <?php
         $conn = new mysqli("localhost", "u542620504_supplyimsAdmin", "Supplyinformationsystem@2024", "u542620504_supplyims");
+        // $conn = new mysqli("localhost", "root", "", "inventory"); //localDatabase
 
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);

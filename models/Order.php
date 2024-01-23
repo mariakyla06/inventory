@@ -1,14 +1,15 @@
 <?php
-
+ 
 Class Order extends Model {
-
+ 
     protected $table = 'orders';
-
+ 
     public function getOrders(){
         return $this->setQuery("SELECT
                                     A.*,
                                     B.productName as product_name,
                                     B.barcodeId as barcode_id,
+                                    B.qty as existing_qty,
                                     C.name as ordered_by_name
                                     FROM `orders` as A
                                     LEFT JOIN `product` as B
@@ -25,6 +26,7 @@ Class Order extends Model {
                                     A.*,
                                     B.productName as product_name,
                                     B.barcodeId as barcode_id,
+                                    B.qty as existing_qty,
                                     C.name as ordered_by_name
                                     FROM `orders` as A
                                     LEFT JOIN `product` as B
@@ -42,6 +44,7 @@ Class Order extends Model {
                                     A.*,
                                     B.productName as product_name,
                                     B.barcodeId as barcode_id,
+                                    B.qty as existing_qty,
                                     C.name as ordered_by_name
                                     FROM `orders` as A
                                     LEFT JOIN `product` as B
@@ -55,5 +58,5 @@ Class Order extends Model {
                             ->getAll();
     }
  
-
+ 
 }

@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
 
     // Connect to the database
-    // $conn = new mysqli("localhost", "root", "admin", "inventory"); //localDatabase
+    // $conn = new mysqli("localhost", "root", "", "inventory"); //localDatabase
     $conn = new mysqli("localhost", "u542620504_supplyimsAdmin", "Supplyinformationsystem@2024", "u542620504_supplyims"); //devsiteDatabase
 
     // Check the connection
