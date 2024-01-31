@@ -16,14 +16,14 @@
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Orders</span>
+        <span class="dashboard">Request Form</span>
       </div>
     </nav>
 
 <div class="container">
     <?php if( isset($_SESSION['user_data']->client_login) ) {?>   
         <div class="form-container left">
-            <h2>Order Form</h2>
+            <h2>Request Form</h2>
             <form class="order-form" action="queries/create_order.php" method="post">
                 <div id="submit_btn" style="display: none;">
                     <input type="submit" value="Submit">

@@ -15,14 +15,14 @@
           margin: 0;
           padding: 0;
           height: 100%;
-          background: #F1C93B !important;
+          background: #70e000 !important;
         }
         .user_card {
           height: 400px;
           width: 350px;
           margin-top: auto;
           margin-bottom: auto;
-          background: green;
+          background: #008000;
           position: relative;
           display: flex;
           justify-content: center;
@@ -40,7 +40,7 @@
           width: 170px;
           top: -75px;
           border-radius: 50%;
-          background: #F1C93B;
+          background: #008000;
           padding: 10px;
           text-align: center;
         }
@@ -55,7 +55,7 @@
         }
         .login_btn {
           width: 100%;
-          background: #F1C93B !important;
+          background: #38b000 !important;
           color: white !important;
         }
         .login_btn:focus {
@@ -66,7 +66,7 @@
           padding: 0 2rem;
         }
         .input-group-text {
-          background: #F1C93B !important;
+          background: #38b000 !important;
           color: white !important;
           border: 0 !important;
           border-radius: 0.25rem 0 0 0.25rem !important;
@@ -77,7 +77,7 @@
           outline: 0px !important;
         }
         .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-          background-color: #F1C93B !important;
+          background-color: #38b000 !important;
         }
     </style>
 </head>
@@ -118,8 +118,8 @@
       
           <div class="mt-4">
             <div class="tab d-flex justify-content-center mt-3 login_container">
-              <button class="tablinks btn btn-sm mx-1" onclick="openForm(event, 'Form1')" style="background-color: #508D69 !important; color: white !important;">Admin</button>
-              <button class="tablinks btn btn-sm mx-1" onclick="openForm(event, 'Form2')" style="background-color: #508D69 !important; color: white !important;">Client</button>
+              <button class="tablinks btn btn-sm mx-1" onclick="openForm(event, 'Form1')" style="background-color: #38b000 !important; color: white !important;">Admin</button>
+              <button class="tablinks btn btn-sm mx-1" onclick="openForm(event, 'Form2')" style="background-color: #38b000 !important; color: white !important;">User</button>
             </div>
           </div>
         </div>
@@ -152,15 +152,15 @@
                 </div>
               </div>
                 <div class="d-flex justify-content-center mt-3 login_container">
-            <button type="submit" name="button" class="btn login_btn">Client Login</button>
+            <button type="submit" name="button" class="btn login_btn">User Login</button>
             </div>
             </form>
           </div>
       
           <div class="mt-4">
             <div class="tab d-flex justify-content-center mt-3 login_container">
-              <button class="tablinks btn btn-sm mx-1" onclick="openForm(event, 'Form1')" style="background-color: #508D69 !important; color: white !important;">Admin</button>
-              <button class="tablinks btn btn-sm mx-1" onclick="openForm(event, 'Form2')" style="background-color: #508D69 !important; color: white !important;">Client</button>
+              <button class="tablinks btn btn-sm mx-1" onclick="openForm(event, 'Form1')" style="background-color: #38b000 !important; color: white !important;">Admin</button>
+              <button class="tablinks btn btn-sm mx-1" onclick="openForm(event, 'Form2')" style="background-color: #38b000 !important; color: white !important;">User</button>
             </div>
           </div>
         </div>

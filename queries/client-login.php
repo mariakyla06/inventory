@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
         // Check if employee_id already exists
-        $employee = $instance->setQuery("SELECT * FROM clients WHERE `employee_id` = '$employee_id' AND `password` = '$password'")->getFirst();
+        $employee = $instance->setQuery("SELECT * FROM clients WHERE `employee_id` = '$employee_id' AND `password` = '$password' AND `deleted_at` IS NULL")->getFirst();
 
         if(isset($employee->id) && $employee->id){
             $_SESSION['user_data'] = $employee;

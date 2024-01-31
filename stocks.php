@@ -46,8 +46,7 @@
 
 
 // Create connection
-    //  $conn = new mysqli("localhost", "root", "", "inventory"); //localDatabase
-    $conn = new mysqli("localhost", "u542620504_supplyimsAdmin", "Supplyinformationsystem@2024", "u542620504_supplyims"); //devsiteDatabase
+include("connection.php");
 
 // Check connection
 if ($conn->connect_error) {
@@ -66,31 +65,8 @@ if ($result->num_rows > 0) {
         $updateProduct[] = $row;
     }
 }
-?><?php if (!empty($updateProduct)): ?>
-        <table>
-            <tr>
-                <th>Product ID</th>
-                <th>Supply Name</th>
-                <th>Category</th>
-                <th>Quantity</th>
-                <th>Date Created</th>
-            </tr>
-            <?php foreach ($updateProduct as $update): ?>
-                <tr>
-                    <td><?php echo $update['barcodeId']; ?></td>
-                    <td><?php echo $update['productName']; ?></td>
-                    <td><?php echo $update['productGroup']; ?></td>
-                    <td><?php echo $update['qty']; ?></td>
-                    <td><?php echo $update['created_at']; ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php else: ?>
-        <p>No product list available.</p>
-    <?php endif; ?>
-    </div> 
-     
-  </div>
+?>
+
 
   <script>
    let sidebar = document.querySelector(".sidebar");

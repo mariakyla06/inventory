@@ -54,8 +54,7 @@
 <?php
 
 // Create connection
-    // $conn = new mysqli("localhost", "root", "", "inventory"); //localDatabase
-    $conn = new mysqli("localhost", "u542620504_supplyimsAdmin", "Supplyinformationsystem@2024", "u542620504_supplyims"); //devsiteDatabase
+    include("connection.php");
 
 // Check connection
 if ($conn->connect_error) {

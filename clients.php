@@ -36,7 +36,7 @@
             <label for="confirm-password">Confirm Password:</label>
             <input type="password" name="confirm-password" id="confirm-password" required>
 
-            <label for="contact">Contact No:</label>
+            <label for="contact">Email:</label>
             <input type="text" name="contact" id="contact" required>
 
             <input type="submit" value="Submit">

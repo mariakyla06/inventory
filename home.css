@@ -11,7 +11,7 @@
   position: fixed;
   height: 100%;
   width: 240px;
-  background: rgba(7, 172, 32, 0.6);
+  background: #70e000;
   transition: all 0.5s ease;
 }
 .sidebar.active{
@@ -255,7 +255,7 @@ nav .search-box .bx-search{
   border: none;
   padding: 12px 30px;
   border-radius: 6px;
-  background-color: #4CAF50;
+  background-color: #007200;
   cursor: pointer;
 }
 .input-box .button:active {
@@ -305,7 +305,7 @@ th, td {
 }
 
 th {
-  background-color: #4CAF50;
+  background-color: #007200;
   color: #fff;
 
 }
@@ -384,7 +384,7 @@ input {
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #007200;
   color: #fff;
   cursor: pointer;
 }
@@ -409,6 +409,14 @@ select {
   position: relative;
   padding-top: 104px;
 }
+.sales-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-sales.box {
+  width: 48%; /* Adjust the width as needed, considering some margin between the two boxes */
+}
 .report-content .sales-boxes .recent-sales{
   width: 65%;
   background: #fff;
@@ -424,7 +432,7 @@ select {
 }
 .sales-boxes .box .button a{
   color: #fff;
-  background: #4CAF50;
+  background: #007200;
   padding: 4px 12px;
   font-size: 15px;
   font-weight: 400;
@@ -434,7 +442,7 @@ select {
   width: 100%;
 }
 .sales-boxes .box .button a:hover{
-  background:  #4CAF50;
+  background:  #007200;
 }
 .monthly-range-picker {
     background-color: #fff;
@@ -474,6 +482,19 @@ button {
 button:hover {
     background-color: #555;
 }
+
+.date-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+.date-container .sales-details p {
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+.date-container input {
+  width: 50%; /* Adjust the width as needed */
+}
+
 /* Setting.html  */
 .form-container {
   max-width: 400px;
@@ -501,7 +522,7 @@ input {
 
 button {
   padding: 12px;
-  background-color: #4CAF50;
+  background-color: #007200;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -509,7 +530,7 @@ button {
 }
 
 button:hover {
-  background-color: #4CAF50;
+  background-color: #007200;
 }
 /*add product*/
 .container {
@@ -545,7 +566,7 @@ input {
 
 button {
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #007200;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -553,7 +574,7 @@ button {
 }
 
 button:hover {
-  background-color: #4CAF50;
+  background-color: #007200;
 }
 
 .product-container {
@@ -581,7 +602,7 @@ th, td {
 }
 .bar-boxes .box .button a{
   color: #fff;
-  background: #4CAF50;
+  background: #007200;
   padding: 4px 12px;
   font-size: 15px;
   font-weight: 400;
@@ -618,7 +639,7 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #007200;
     color: #fff;
 }
 
@@ -661,4 +682,3 @@ th {
       font-weight: bold;
   }
 }
-

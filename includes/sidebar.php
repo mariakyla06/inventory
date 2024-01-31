@@ -5,7 +5,7 @@
             <li>
                 <a href="orders.php">
                     <i class='bx bx-cart'></i>
-                    <span class="links_name">Orders</span>
+                    <span class="links_name">Request Orders</span>
                 </a>
             </li>
 
@@ -19,7 +19,7 @@
                 </li>
                 <li>
                     <a href="barcode.php">
-                        <i class='bx bx-store'></i>
+                    <i class='bx bx-package'></i>
                         <span class="links_name">Add Supply</span>
                     </a>
                 </li>
@@ -58,7 +58,14 @@
                 <li>
                     <a href="setting.php">
                         <i class='bx bx-cog'></i>
-                        <span class="links_name">Setting</span>
+                        <span class="links_name">Settings</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="csvImporter.php">
+                    <i class='bx bx-import'></i>
+                        <span class="links_name">CSV Importer</span>
                     </a>
                 </li>
             

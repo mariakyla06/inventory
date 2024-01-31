@@ -5,8 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $qty = $_POST['qty'];
 
     // Connect to the database
-    // $conn = new mysqli("localhost", "root", "", "inventory"); //localDatabase
-    $conn = new mysqli("localhost", "u542620504_supplyimsAdmin", "Supplyinformationsystem@2024", "u542620504_supplyims"); //devsiteDatabase
+    include("connection.php");
 
     // Check the connection
     if ($conn->connect_error) {

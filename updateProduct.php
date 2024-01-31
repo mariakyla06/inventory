@@ -10,8 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     // Connect to the database
-    // $conn = new mysqli("localhost", "root", "", "inventory"); //localDatabase
-    $conn = new mysqli("localhost", "u542620504_supplyimsAdmin", "Supplyinformationsystem@2024", "u542620504_supplyims"); //devsiteDatabase
+    include("connection.php");
 
     // Check the connection
     if ($conn->connect_error) {
@@ -82,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // If no errors, commit the transaction
             $conn->commit();
 
-            echo "<script>alert('Product Saved!'); window.location='barcode.php';</script>";
+            echo "<script>alert('Product Saved!'); window.location='product.php';</script>";
             exit(); // Ensure that no other code is executed after the redirect
         } catch (Exception $e) {
             // An error occurred, rollback the transaction and show the error message

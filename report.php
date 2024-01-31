@@ -20,24 +20,29 @@
     </nav>
  
     <div class="report-content">
-      <div class="sales-boxes">
-      <p>Start Date: <input type="text" id="startdate"></p>
-      <p>End Date: <input type="text" id="enddate"></p>
- 
-        <div class="recent-sales box">
-          <div class="title">Import Product
-            <div class="sales-details">
-              <div class=></div>
-              <div class="button" onclick="pdfGenerate('IN')">
-                <a >GENERATE</a>
+          <div class="date-container">
+            <div class="recent-sales box" >
+              <div class="sales-details">
+                <p>Start Date: <input type="text" id="startdate"></p>
+                <p>End Date: <input type="text" id="enddate"></p>
               </div>
             </div>
           </div>
+        <div class="sales-boxes"> 
+          <div class="recent-sales box">
+            <div class="title">Incoming Supply
+              <div class="sales-details">
+                <div class=></div>
+                <div class="button" onclick="pdfGenerate('IN')">
+                  <a >GENERATE</a>
+                </div>
+              </div>
+            </div>
  
         </div>
         <br>
         <div class="recent-sales box">
-          <div class="title">Release Product
+          <div class="title">Outgoing Supply
             <div class="sales-details">
               <div class=></div>
               <div class="button" onclick="pdfGenerate('OUT')">
@@ -46,10 +51,11 @@
             </div>
           </div>
         </div>
+       
  
  
       </div>
- 
+     
     </div>
     <!-- <div class="month">
            <div class="monthly-range-picker">
