@@ -6,7 +6,7 @@ class Model
     protected $host = "localhost";
     protected $database = "inventory";
     protected $username = "root";
-    protected $password = "admin";
+    protected $password = "";
 
     protected $dev_host = "localhost";
     protected $dev_database = "u542620504_supplyims";

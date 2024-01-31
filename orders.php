@@ -175,7 +175,7 @@
                             <?php 
                                 if( (int) $order['quantity'] > (int) $order['existing_qty']  ){
                             ?>
-                               <p>OUT OF STOCK</p>
+                               <p>NOT ENOUGH STOCK</p>
 
                             <?php }else{ ?>
                                 <form action="queries/update_order.php" method="post">

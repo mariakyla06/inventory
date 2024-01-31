@@ -24,10 +24,10 @@
             <label for="barcodeId">Barcode:</label>
             <input type="text" name="barcodeId" id="barcodeId" required>
 
-            <label for="productName">Product Name:</label>
+            <label for="productName">Supply Name:</label>
             <input type="text" name="productName" id="productName" required>
 
-            <label for="productGroup">Product Group:</label>
+            <label for="productGroup">Category:</label>
             <input type="text" name="productGroup" id="productGroup" required>
 
             <label for="qty">Quantity:</label>

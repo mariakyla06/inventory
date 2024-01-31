@@ -26,7 +26,7 @@
 
             <label for="qty">Quantity:</label>
             <input type="number" id="qty" name="qty" min="1" required>
-            <input type="submit" value="Update Product">
+            <input type="submit" value="Update Stocks">
         </form>
     </div> 
 
